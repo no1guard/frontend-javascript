@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+</head>
+<body>
+<div>
+    이름 : <input type="text" id="user_name"><br>
+    이메일 : <input type="text" id="user_email"><br>
+    비밀번호 : <input type="password" id="user_pw"><br>
+    비밀번호확인 : <input type="password" id="user_pw_confirm"><br>
+
+    <button onclick="회원가입()">회원가입</button>
+
+    <script>
+        function 회원가입(){
+            const 이름 = document.getElementById("user_name").value;
+            const 이메일 = document.getElementById("user_email").value;
+            const 비밀번호 = document.getElementById("user_pw").value;
+            const 비밀번호확인 = document.getElementById("user_pw_confirm").value;
+
+            if(비밀번호 == 비밀번호확인){
+                if(이름 == '1' && 이메일 == '2' && 비밀번호 == '3') {
+                    alert("회원가입되었습니다!");
+                } else {
+                    alert("잘못된 입력입니다.");
+                }
+            } else {
+                alert("비밀번호가 일치하지 않습니다.");
+            }
+        }
+    </script>
+
+</div>
+</body>
+</html>
